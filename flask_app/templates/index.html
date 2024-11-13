@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execute Controller</title>
+    <script>
+        function toggleSubmitButton() {
+            var userInput = document.getElementById('user_input').value.trim();
+            document.getElementById('submit_button').disabled = userInput === '';
+        }
+    </script>
+</head>
+<body>
+    <h1>RUN AB1.6 TEST</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form action="{{ url_for('index') }}" method="post">
+        <label for="user_input">Enter text:</label><br>
+        <textarea id="user_input" name="user_input" rows="4" cols="50" onkeyup="toggleSubmitButton()"></textarea><br><br>
+        <input type="submit" id="submit_button" value="Submit" disabled>
+    </form>
+</body>
+</html>

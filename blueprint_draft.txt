@@ -1,0 +1,123 @@
+CapEx Module Line Items:
+
+Project Cost:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Depreciation Start Date:
+Format: Date
+Summary: Min
+Time Scale: Month
+Versions: All
+
+Useful Life:
+Format: Number
+Summary: Average
+Time Scale: Month
+Versions: All
+
+Depreciation Expense:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Net Book Value:
+Format: Number
+Summary: Last non-blank
+Time Scale: Month
+Versions: All
+
+Capital Expenditure:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+CapEx Approvals:
+Format: List (CapEx Approvals)
+Summary: Any
+Time Scale: Month
+Versions: All
+
+Project Completion Date:
+Format: Date
+Summary: Max
+Time Scale: Month
+Versions: All
+
+Accumulated Depreciation:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Initial Project Cost:
+Format: Number
+Summary: First non-blank
+Time Scale: Month
+Versions: All
+
+OpEx Module Line Items:
+
+Expense Amount:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Expense Type:
+Format: List (Expense Categories)
+Summary: None
+Time Scale: Month
+Versions: All
+
+Monthly Allocation:
+Format: Number
+Summary: None
+Time Scale: Month
+Versions: All
+
+Total OpEx:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Variance Analysis:
+Format: Number
+Summary: None
+Time Scale: Month
+Versions: All
+
+Cost Center Allocations:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Budgeted OpEx:
+Format: Number
+Summary: None
+Time Scale: Month
+Versions: All
+
+Year-to-Date OpEx:
+Format: Number
+Summary: Sum
+Time Scale: Month
+Versions: All
+
+Percentage of Budget Used:
+Format: Number
+Summary: None
+Time Scale: Month
+Versions: All
+
+Forecast OpEx:
+Format: Number
+Summary: None
+Time Scale: Month
+Versions: All

@@ -1,0 +1,10 @@
+CapEx Module
+- Accounts
+- Cost Centers
+- Projects
+- CapEx Approvals
+
+OpEx Module
+- Accounts
+- Cost Centers
+- Expense Categories

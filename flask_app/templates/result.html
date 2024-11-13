@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    {% if output %}
+        <h2>Output:</h2>
+        <pre>{{ output }}</pre>
+    {% endif %}
+    {% if error %}
+        <h2>Error:</h2>
+        <pre style="color: red;">{{ error }}</pre>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Go back</a>
+</body>
+</html>
+

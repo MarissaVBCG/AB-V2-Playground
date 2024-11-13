@@ -1,0 +1,25 @@
+CapEx Module Line Items:
+
+1. Project Cost: N/A
+2. Depreciation Start Date: N/A
+3. Useful Life: N/A
+4. Depreciation Expense: 'Project Cost' / 'Useful Life'
+5. Net Book Value: 'Project Cost' - CUMULATE('Depreciation Expense')
+6. Capital Expenditure: N/A
+7. CapEx Approvals: N/A
+8. Project Completion Date: N/A
+9. Accumulated Depreciation: CUMULATE('Depreciation Expense')
+10. Initial Project Cost: N/A
+
+OpEx Module Line Items:
+
+1. Expense Amount: N/A
+2. Expense Type: N/A
+3. Monthly Allocation: N/A
+4. Total OpEx: 'Expense Amount'[SELECT: TIME.All Periods]
+5. Variance Analysis: 'Expense Amount' - 'Budgeted OpEx'
+6. Cost Center Allocations: 'Expense Amount' / 'Cost Centers'
+7. Budgeted OpEx: N/A
+8. Year-to-Date OpEx: CUMULATE('Expense Amount')
+9. Percentage of Budget Used: 'Expense Amount' / 'Budgeted OpEx'
+10. Forecast OpEx: N/A

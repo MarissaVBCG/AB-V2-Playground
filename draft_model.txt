@@ -1,0 +1,24 @@
+Model Design: Auto Builder Model
+
+Overview:
+The Auto Builder Model is designed to manage and forecast both capital expenditures (CapEx) and operational expenditures (OpEx) by integrating key financial components into a unified structure. The model consists of two primary modules: The CapEx Module for managing capital investment-related data and the OpEx Module for handling operational expenses. These modules will interact with lists such as Cost Centers and Accounts to allocate and analyze costs effectively. The overall objective is to provide a foundation for detailed cost tracking and financial analysis that can be expanded with specific financial logics and data integration.
+
+Key Components:
+
+Modules:
+
+CapEx Module: This module handles the management of capital investments. It tracks project costs and calculates depreciation expenses over the useful life of each asset. It also supports the approval process for capital expenditures and reports on the net book value.
+OpEx Module: This module focuses on operational cost management. It categorizes expenditures by type and manages monthly expense allocations. It also facilitates variance analysis against budgets and allocates costs across different cost centers for reporting purposes.
+
+Lists (Dimensions):
+
+Accounts: This list distinguishes between CapEx and OpEx to ensure that costs are accurately classified and reported.
+Cost Centers: Associates costs with various departments or functions, providing detailed analysis capabilities for both capital and operational expenses.
+Projects: A hierarchy within CapEx intended to track expenditures by individual projects or investment initiatives.
+Expense Categories: Defined for the OpEx module to categorize different types of expenses such as utilities, rent, and salaries.
+
+Data Flow and Integration:
+
+Data Flow: The data flow in the Auto Builder Model will begin with the capture of expenses in both the CapEx and OpEx modules. The CapEx Module will calculate costs associated with capital projects, integrating these with the projects list to report on individual and total project spend. Depreciation calculations will continually update the net book value of assets. The OpEx Module will allocate expense amounts based on categories and cost centers, feeding into variance analysis to assess performance against financial plans. There will be inter-module communication to ensure the financial data is synchronized and provides a comprehensive view of both operational and capital expenditure.
+
+This foundational structure will allow for future detailing and integration with financial systems for more advanced reporting and analytics.

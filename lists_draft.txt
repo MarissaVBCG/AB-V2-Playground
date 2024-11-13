@@ -1,0 +1,7 @@
+Accounts  
+Cost Centers  
+Projects  
+Expense Categories  
+Assets  
+Departments  
+CapEx Approvals

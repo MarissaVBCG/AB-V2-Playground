@@ -1,0 +1,34 @@
+{
+    "Employee Headcount and Expenses Module": {
+        "Current Employee Headcount": "information needed",
+        "Projected Employee Headcount": "information needed",
+        "Total Current Expenses": "information needed",
+        "Total Projected Expenses": "'Department Financials'[SUM: 'Departments']",
+        "Department Employee Metrics": "ITEM('Departments')",
+        "Department Financials": "ITEM('Departments')"
+    },
+    "Employee Drivers Module": {
+        "Employee Cost Drivers": "information needed",
+        "Resource Planning Assumptions": "information needed",
+        "Country-specific Adjustment Factors": "information needed",
+        "Employee Benefits and Allowances": "information needed",
+        "Salary Inflation Rates": "information needed",
+        "Workforce Planning Metrics": "ITEM('Employee Drivers List')"
+    },
+    "Profit and Loss Module": {
+        "Monthly Revenue": "information needed",
+        "Monthly Cost of Goods Sold": "information needed",
+        "Monthly Gross Profit": "'Monthly Revenue' - 'Monthly Cost of Goods Sold'",
+        "Operating Expenses": "information needed",
+        "Net Profit or Loss": "'Monthly Gross Profit' - 'Operating Expenses'",
+        "Country-specific Financial Performance": "ITEM('Countries')"
+    },
+    "Version Comparison Module": {
+        "Actual Data": "information needed",
+        "Budget Data": "information needed",
+        "Forecast Data": "information needed",
+        "Variance Analysis Actual vs. Budget": "information needed",
+        "Variance Analysis Actual vs. Forecast": "information needed",
+        "Trend Analysis": "information needed"
+    }
+}

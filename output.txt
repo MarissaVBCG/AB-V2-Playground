@@ -1,0 +1,135 @@
+Running santaClaus.py...
+Draft model saved to draft_model.txt
+Draft lists saved to lists_draft.txt
+Draft modules saved to modules_draft.txt
+Associations between modules and lists saved to associations_draft.txt
+Suggested Line Items have been saved to line_items_draft.txt
+Line item attributes saved to blueprint_draft.txt
+Formulas saved to formulas_draft.txt
+ChatGPT response received, saving variables...
+Variables saved successfully to variables.txt
+Sending prompt to ChatGPT...
+
+ChatGPT Response:
+```json
+{
+    "CapEx Module": {
+        "line1": "information needed",
+        "line2": "information needed",
+        "line3": "information needed",
+        "line4": "'Project Cost' / 'Useful Life'",
+        "line5": "'Project Cost' - CUMULATE('Depreciation Expense')",
+        "line6": "information needed",
+        "line7": "information needed",
+        "line8": "information needed",
+        "line9": "CUMULATE('Depreciation Expense')",
+        "line10": "information needed"
+    },
+    "OpEx Module": {
+        "line1": "information needed",
+        "line2": "information needed",
+        "line3": "information needed",
+        "line4": "'Expense Amount'[SELECT: TIME.All Periods]",
+        "line5": "'Expense Amount' - 'Budgeted OpEx'",
+        "line6": "'Expense Amount' / 'Cost Centers'",
+        "line7": "information needed",
+        "line8": "CUMULATE('Expense Amount')",
+        "line9": "'Expense Amount' / 'Budgeted OpEx'",
+        "line10": "information needed"
+    }
+}
+```
+
+Parsing JSON from the response...
+JSON data successfully saved to 'default_user/formulas.json'.
+santaClaus.py completed successfully.
+Running module.py...
+DEBUG:root:Virtual display set up complete.
+DEBUG:selenium.webdriver.common.driver_finder:Skipping Selenium Manager; path to chrome driver specified in Service class: /home/roberto/Documents/AB/testnov6/default_user/chromedriver
+DEBUG:selenium.webdriver.common.service:Started executable: `/home/roberto/Documents/AB/testnov6/default_user/chromedriver` in a child process with pid: 33026 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--window-size=1920x1080', '--log-level=3']}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:36255
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"130.0.6723.116","chrome":{"chromedriverVersion":"130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353})","userDataDir":"/tmp/.org.chromium.Chromium.Qnx8QP"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43977"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"df989db6653302063d5a3a3541056763"}} | headers=HTTPHeaderDict({'Content-Length': '849', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/url {'url': 'https://us1a.app.anaplan.com/auth/prelogin?service=https://us1a.app.anaplan.com/home'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/url HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/window/maximize {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/window/maximize HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1048,"width":1920,"x":0,"y":32}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'css selector', 'value': '[id="email-prelogin"]'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.36CC27D0B36F0240629294762D08B5DD.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.36CC27D0B36F0240629294762D08B5DD.e.3/value {'text': 'jose.monge@vb-cg.com', 'value': ['j', 'o', 's', 'e', '.', 'm', 'o', 'n', 'g', 'e', '@', 'v', 'b', '-', 'c', 'g', '.', 'c', 'o', 'm']}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.36CC27D0B36F0240629294762D08B5DD.e.3/value HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.36CC27D0B36F0240629294762D08B5DD.e.3/value {'text': '\ue007', 'value': ['\ue007']}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.36CC27D0B36F0240629294762D08B5DD.e.3/value HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'css selector', 'value': '[id="password"]'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.56"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.56/value {'text': 'Anaplan24!', 'value': ['A', 'n', 'a', 'p', 'l', 'a', 'n', '2', '4', '!']}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.56/value HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'xpath', 'value': '/html/body/div[1]/div[1]/div/form/button'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.59"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.59/click {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.7ED412185A9FD238019A1C96BBA5D73C.e.59/click HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/url {'url': 'https://us1a.app.anaplan.com/home'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/url HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'css selector', 'value': '.ShellContent_iframe__rn6Ss'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.0457AC5F196D22055D6F705E72F7AF75.e.83"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/frame {'id': {'element-6066-11e4-a52e-4f735466cecf': 'f.DB8328FEBDDCF804C56D00FEE1E3CE85.d.0457AC5F196D22055D6F705E72F7AF75.e.83'}}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/frame HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'xpath', 'value': '/html/body/div/div/div[2]/main/div/div[2]/div/div[2]/div[1]/section/div/header/h2/div/div/h3'}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.84"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.84/click {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.84/click HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element {'using': 'xpath', 'value': "//*[text()='Auto Builder Model']"}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.85"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:36255/session/df989db6653302063d5a3a3541056763/element/f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.85/click {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "POST /session/df989db6653302063d5a3a3541056763/element/f.C99BF0AB3FA8ED7AF7DE2DF638B15CC4.d.49204C83FE5476FC84C584300FB14870.e.85/click HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:36255/session/df989db6653302063d5a3a3541056763/url {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "GET /session/df989db6653302063d5a3a3541056763/url HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"https://us1a.app.anaplan.com/a/modeling/customers/8a868cd980587509018099eaae7568bc/workspaces/8a868cdd877bb3590187d98ea2b24a93/models/E900C491EFB74375B7E78B66C95C53C7"} | headers=HTTPHeaderDict({'Content-Length': '178', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:36255/session/df989db6653302063d5a3a3541056763 {}
+DEBUG:urllib3.connectionpool:http://localhost:36255 "DELETE /session/df989db6653302063d5a3a3541056763 HTTP/11" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+Model name: Auto Builder Model
+Module name: ['CapEx Module', 'OpEx Module']
+Line items: [['Project Cost', 'Depreciation Start Date', 'Useful Life', 'Depreciation Expense', 'Net Book Value', 'Capital Expenditure', 'CapEx Approvals', 'Project Completion Date', 'Accumulated Depreciation', 'Initial Project Cost'], ['Expense Amount', 'Expense Type', 'Monthly Allocation', 'Total OpEx', 'Variance Analysis', 'Cost Center Allocations', 'Budgeted OpEx', 'Year-to-Date OpEx', 'Percentage of Budget Used', 'Forecast OpEx']]
+The new page URL is: https://us1a.app.anaplan.com/a/modeling/customers/8a868cd980587509018099eaae7568bc/workspaces/8a868cdd877bb3590187d98ea2b24a93/models/E900C491EFB74375B7E78B66C95C53C7
+CapEx Module
+OpEx Module
+Your module has been created successfully!
+module.py completed successfully.
+Running list.py...

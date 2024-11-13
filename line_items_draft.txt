@@ -1,0 +1,33 @@
+CapEx Module Line Items:
+
+1. Project Cost: Capture the initial capital investment for each project.
+2. Depreciation Start Date: Record the date when depreciation begins for an asset.
+3. Useful Life: Define the asset's useful life period for depreciation calculation.
+4. Depreciation Expense: Formula "Project Cost / Useful Life", calculate the depreciation expense over the asset's useful life.
+5. Net Book Value: Calculate the asset's value after accounting for depreciation.
+6. Capital Expenditure: Capture total capital expenditure by project.
+7. CapEx Approvals: Track the status of approval for each capital expenditure, possibly using a boolean or list formatted line item to indicate approval status.
+8. Project Completion Date: Track the completion date for project reporting.
+9. Accumulated Depreciation: Sum of all depreciation expenses over time.
+10. Initial Project Cost: Store the original project cost before any changes, useful for analysis.
+
+OpEx Module Line Items:
+
+1. Expense Amount: Record the amount spent on operating expenses.
+2. Expense Type: Classify the expense type, driven by the Expense Categories list.
+3. Monthly Allocation: Spread expense amounts across months as per allocation rules.
+4. Total OpEx: Sum of all operational expenses.
+5. Variance Analysis: Compare actual expenses against budgets and calculate variance.
+6. Cost Center Allocations: Distribute expenses across various cost centers for detailed analysis.
+7. Budgeted OpEx: Define planned expenses for cost control.
+8. Year-to-Date OpEx: Sum of operational expenditures incurred year-to-date.
+9. Percentage of Budget Used: Calculate the percentage of budget utilized to track spending.
+10. Forecast OpEx: Predict future expenses based on current trends.
+
+Additional Considerations:
+
+Create specific line items for data import/export if needed to integrate with external financial systems.
+
+Ensure the dimensions in each module are correctly associated to enable accurate reporting and data entry based on the provided lists: Accounts, Cost Centers, Projects, and Expense Categories.
+
+Consider setting up actions or processes to facilitate monthly financial close procedures for accuracy and efficiency.

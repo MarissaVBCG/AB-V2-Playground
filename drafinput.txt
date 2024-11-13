@@ -1,0 +1,29 @@
+In my Anaplan Model: Auto Builder Model, I want to create the following: 
+
+Lists: 
+
+- Accounts: Distinguish between capital expenses (CapEx) and operational expenses (OpEx) by account type.
+- Cost Centers: For both CapEx and OpEx, associate costs with various departments or functions.
+- Projects (for CapEx): Track capital expenditures by project or investment.
+- Expense Categories (for OpEx): Define categories like utilities, rent, salaries, etc.
+
+And these two modules: 
+
+1. CapEx Module
+- Project Cost: Number format. 
+- Depreciation Start Date. 
+- Useful Life
+- Depreciation Expense: With formula "Project Cost / Useful Life"
+- Net Book Value
+- Capital Expenditure
+- CapEx Approvals
+
+2. OpEx Module
+- Expense Amount: Number format. 
+- Expense Type
+- Monthly Allocation
+- Total OpEx
+- Variance Analysis
+- Cost Center Allocations
+
+Please suggest the rest of what is needed to complete this model. 
